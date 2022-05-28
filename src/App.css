@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+.header {
+  width: 100%;
+}
+
+.leftSide {
+  /* background: linear-gradient(rgb(174, 104, 6), rgb(245, 145, 6), rgb(234, 153, 39), rgb(234, 153, 39)); */
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headForm {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.headFormHide {
+  display: none;
+  cursor: pointer;
+}
+
+.headForm:hover {
+  color: #B05D03;
+  cursor: pointer;
+  width: 300px;
+}
+
+.rightTop {
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+.sidenav {
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav a{
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav a:hover{
+  font-size: 34px;
+}
+
+#menu-btn {
+  font-size: 50px;
+}
+
+
+.leftSide {
+  width: 0px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background-color: #d07009;
+  transition: 0.5s;
+  padding-top: 180px;
+  overflow-x: hidden;
+}
+
+/* .leftSide {
+  width: 100%;
+  height: 0vh;
+  z-index: 1;
+  transition: 0.5s;
+  background-color: #d07009;
+  overflow-x: hidden; 
+} */
+
+#myleftNavALT {
+  display: none;
+}
+
+.leftSide a {
+  text-decoration: none;
+  font-size: 25px;
+  display: block;  
+  transition: 0.3s;
+  color: white;
+  transition: 0.5s;
+}
+
+.leftSide a:hover {
+  color: red;
+  font-size: 30px;
+}
+
+.leftSide .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.leftSide .closebtn:hover {
+  font-size: 50px;
+}
+
+#myrightNav {
+  transition: margin-left 1.5s;
+  padding: 16px;
+}
+
+.editBtn:hover {
+  background-color: #B05D03;
+}
+
+.addBtn:hover {
+  background-color: #B05D03;
+}
+
+/* @media (max-width:1000px) {
+  .leftOne {
+    margin-top: 0%;
+  }
+
+  .main .leftSide {
+    position: absolute;
+    top:110%; right:-110%; 
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+  }
+} */
+
+@media screen and (max-width: 650px) {
+  .headline {
+    font-size: 70%;
+  }
+
+  #myleftNavALT {
+    display: inline-block;
+  }
+
+  .myleftNav {
+    display: none;
+  }
+
+  .headFormHide {
+    display: inline-block;
+  }
+
+  .headForm {
+    display: none;
+    cursor: pointer;
+  }
+
+  .leftSideALT {
+  width: 100%;
+  height: 0vh;
+  z-index: 1;
+  transition: 0.5s;
+  background-color: #d07009;
+  overflow-x: hidden; 
+}
+
+.leftSideALT a {
+  text-decoration: none;
+  font-size: 25px;
+  display: block;  
+  transition: 0.3s;
+  color: white;
+  transition: 0.5s;
+}
+  
+}
+
