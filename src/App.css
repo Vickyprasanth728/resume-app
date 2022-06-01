@@ -206,7 +206,7 @@ body {
   top: 50px;
   right: 150px;
   font-size: 36px;
-  margin-left: 400px;
+  /* margin-left: 400px; */
 }
 
 .leftSideALT .closebtn1:hover {
