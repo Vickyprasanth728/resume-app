@@ -29,6 +29,7 @@ body {
   color: #B05D03;
   cursor: pointer;
   width: 300px;
+  transform: matrix();
 }
 
 .rightTop {
@@ -54,7 +55,6 @@ body {
   font-size: 50px;
 }
 
-
 .leftSide {
   width: 0px;
   height: 100vh;
@@ -66,6 +66,16 @@ body {
   transition: 0.5s;
   padding-top: 180px;
   overflow-x: hidden;
+  /* animation: mymove 5s infinite; */
+}
+
+.leftSide:hover {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: #d07009;}
+  to {background-color: rgb(26, 95, 244);}
 }
 
 /* .leftSide {
@@ -150,6 +160,8 @@ body {
 
   .headFormHide {
     display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
   }
 
   .headForm {
@@ -163,8 +175,12 @@ body {
   z-index: 1;
   transition: 0.5s;
   background-color: #d07009;
-  overflow-x: hidden; 
+  overflow: hidden; 
 }
+
+/* .leftSideALT:hover {
+  animation: mymove 5s infinite;
+} */
 
 .leftSideALT a {
   text-decoration: none;
@@ -175,5 +191,35 @@ body {
   transition: 0.5s;
 }
   
+.leftSideALT a:hover {
+  color: red;
+  font-size: 30px;
+}
+
+/* @keyframes mymove {
+  from {background-color: #d07009;}
+  to {background-color: rgb(26, 95, 244);}
+} */
+
+.leftSideALT .closebtn1 {
+  /* position: absolute; */
+  top: 50px;
+  right: 150px;
+  font-size: 36px;
+  margin-left: 400px;
+}
+
+.leftSideALT .closebtn1:hover {
+  font-size: 50px;
+  color: red;
+}
+
+.headEdit {
+  font-size: 30px !important;
+}
+
+.paraEdit {
+  font-size: 22px !important;
+}
 }
 

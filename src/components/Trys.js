@@ -460,9 +460,9 @@ class Trys extends Component {
                     )} 
                 </div>
                 <div class="text-center leftSideALT" id='myleftNavALT'>
-                  <a href="javascript:void(0)" class="closebtn" onClick={() => this.closeNavOne()}>&times;</a>
+                  <a href="javascript:void(0)" class="closebtn1" onClick={() => this.closeNavOne()}>&times;</a>
                     {this.state.nav.map((item) =>  
-                    <div>
+                    <div className='leftnav'>
                         <h4><a href="#about">{item.about}</a></h4> 
                         <h4><a href="#experience">{item.experience}</a></h4> 
                         <h4><a href="#education">{item.education}</a></h4>
@@ -477,7 +477,7 @@ class Trys extends Component {
                 <div></div>
                 <div class="rightSide w-100" id='myrightNav' >
                     <div class="fa fa-bars headForm" aria-hidden="true" id="menu-btn" onClick={() => this.menuBtn()}></div>
-                    <div class="fa fa-bars headFormHide" style={{color : "orangered"}} aria-hidden="true" id="menu-btn" onClick={() => this.menuBtnOne()}></div>
+                    <div class="fa fa-bars headFormHide" aria-hidden="true" id="menu-btn" onClick={() => this.menuBtnOne()}></div>
 
                     <div class='rightTop' id='rightTop'>
                     <section id='about' onClick={() => this.closeNav()} >
@@ -511,9 +511,9 @@ class Trys extends Component {
                     </section>
 
                     <section id='experience' className='experience jumbotron'>
-                    <tr class="table row">
-                        <h1 class="col-lg-10" style={{color:"#844705"}}>{this.state.experienceTop}</h1>
-                        <h4 class="col-lg-10" style={{color:"#422301"}}>{this.state.experienceH}</h4>
+                    <tr class="table stepsForm row">
+                        <h1 class="col-lg-10 headEdit" style={{color:"#844705"}}>{this.state.experienceTop}</h1>
+                        <h4 class="col-lg-10 paraEdit" style={{color:"#422301"}}>{this.state.experienceH}</h4>
                         <div class="col-lg-1">
                             <button class="btn btn-secondary addBtn" data-toggle="modal" data-target="#exampleModalExperience" onClick={(item , i) => this.modalExpButton(item ,i)}> Add </button>
                         </div>
@@ -544,8 +544,8 @@ class Trys extends Component {
                     <section id='education' className='jumbotron'>
                     {/* {this.state.educationHead.map((item , i) =>   */}
                     <tr class="table row">
-                        <h1 class="col-lg-10" style={{color:"#844705"}}>{this.state.educationTop}</h1>
-                        <h4 class="col-lg-10" style={{color:"#422301"}}>{this.state.educationH}</h4>
+                        <h1 class="col-lg-10 headEdit" style={{color:"#844705"}}>{this.state.educationTop}</h1>
+                        <h4 class="col-lg-10 paraEdit" style={{color:"#422301"}}>{this.state.educationH}</h4>
                         <div class="col-lg-1">
                             <button class="btn btn-secondary addBtn" data-toggle="modal" data-target="#exampleModalEducation" onClick={(item , i) => this.modalEduButton(item ,i)}> Add </button>
                         </div>
@@ -571,8 +571,8 @@ class Trys extends Component {
 
                     <section id='skills' className='jumbotron'>
                     <tr class="table row">
-                        <h1 class="col-lg-10" style={{color:"#844705"}}>{this.state.skillsTop}</h1>
-                        <h4 class="col-lg-10" style={{color:"#422301"}}>{this.state.skillsH}</h4>
+                        <h1 class="col-lg-10 headEdit" style={{color:"#844705"}}>{this.state.skillsTop}</h1>
+                        <h4 class="col-lg-10 paraEdit" style={{color:"#422301"}}>{this.state.skillsH}</h4>
                         <div class="col-lg-1">
                             <button class="btn btn-secondary addBtn" data-toggle="modal" data-target="#exampleModalSkills" onClick={(item , i) => this.modalSkillsButton(item ,i)}> Add </button>
                         </div>
@@ -596,8 +596,8 @@ class Trys extends Component {
 
                     <section id='interests' className='jumbotron'>
                     <tr class="table row">
-                        <h1 class="col-lg-10" style={{color:"#844705"}}>{this.state.interestsTop}</h1>
-                        <h4 class="col-lg-10" style={{color:"#422301"}}>{this.state.interestsH}</h4>
+                        <h1 class="col-lg-10 headEdit" style={{color:"#844705"}}>{this.state.interestsTop}</h1>
+                        <h4 class="col-lg-10 paraEdit" style={{color:"#422301"}}>{this.state.interestsH}</h4>
                         <div class="col-lg-1">
                             <button class="btn btn-secondary addBtn" data-toggle="modal" data-target="#exampleModalInterests" onClick={(item , i) => this.modalInterestsButton(item ,i)}> Add </button>
                         </div>
@@ -619,8 +619,8 @@ class Trys extends Component {
 
                     <section id='awards' className='jumbotron'>
                     <tr class="table row">
-                        <h1 class="col-lg-10" style={{color:"#844705"}}>{this.state.awardsTop}</h1>
-                        <h4 class="col-lg-10" style={{color:"#422301"}}>{this.state.awardH}</h4>
+                        <h1 class="col-lg-10 headEdit" style={{color:"#844705"}}>{this.state.awardsTop}</h1>
+                        <h4 class="col-lg-10 paraEdit" style={{color:"#422301"}}>{this.state.awardH}</h4>
                         <div class="col-lg-1">
                             <button class="btn btn-secondary addBtn" data-toggle="modal" data-target="#exampleModalAwards" onClick={(item , i) => this.modalAwardsButton(item ,i)}> Add </button>
                         </div>
